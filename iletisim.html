@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PEKPAK-Emlak</title>
+
+    <!-- CSS Link  -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- yazı tipi  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <svg class="lnr lnr-phone-handset"><use xlink:href="#lnr-phone-handset"></use></svg> 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- leafpad -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  </head>
+  <body>
+    <a href="index.html" target="_blank" alt="logo">
+      <img src="resimler/PEKPAK-EMLAK-2.png" alt="logo" class="sayfamLogo"/>
+    </a>
+    <header>
+      <nav>
+        <div class="divUst">
+          <img class="divUstImg" src="resimler/telefon.png" >
+          <span>0553-553-53-53</span>
+          <img src="resimler/mail.png">
+          <span class="divUstSpan">ahmetgshamza@gmail.com</span>
+          <a href="https://www.facebook.com/share/1BPBVgswc1/" target="_blank" class="social-link">
+            <img class="divUstBoslukSosyalMedya" src="resimler/facebook.png" alt="Facebook">
+          </a>
+          <a href="https://twitter.com" target="_blank" class="social-link">
+            <img class="divUstSosyalMedya" src="resimler/twitter.png" alt="Twitter">
+          </a>
+          <a href="https://www.instagram.com/ahmethamzapekpak/" target="_blank" class="social-link">
+            <img class="divUstSosyalMedya" src="resimler/instagram.png" alt="İnstagram">
+          </a>
+          <a href="https://www.youtube.com/" target="_blank" class="social-link">
+            <img class="divUstSosyalMedya" src="resimler/youtube.png" alt="Youtube">
+          </a>
+        </div>
+        <div class="divheader">
+          <ul>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="kurumsal.html">Kurumsal</a></li>
+            <li><a href="portfoyler.html">Portföyler</a></li>
+            <li><a href="ofis.html">Ofis</a></li>
+            <li><a href="projeler.html">Projeler</a></li>
+            <li><a href="danismanlar.html">Danışmanlar</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+          </ul>
+        </div>
+          <div class="ustKurumsalFoto">
+            <h3>İLETİŞİM</h3>
+          </div>
+      </nav>
+      <div class="portfolyoIletisim">
+        <div class="haritaIletisim" id="map">
+        </div>
+        <!-- Konum yerleri kartı -->
+        <div class="ofisKonum">
+            <div class="bodyy">
+                <div class="container">
+                    <div class="form-section">
+                        <form>
+                            <div class="form-row">
+                                <input type="text" placeholder="Ad">
+                                <input type="text" placeholder="Soyad">
+                            </div>
+                            <input type="email" placeholder="E-posta">
+                            <textarea placeholder="Mesaj"></textarea>
+                            <button>Gönder</button>
+                        </form>
+                    </div>
+                    <div class="text-section">
+                        <!-- Bu alana yazılar yazılabilir. -->
+                        <h2>Merkez Ofis</h2>
+                        <p>Adres: Konya/Meram</p>
+                        <p>Telefon: 0553 553 53 53</p>
+                        <p>E-posta: ahmetgshamza@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="altYardimciDivi">
+        <div class="altYardimciDiviBaslik">
+          <h3>Size Nasıl Yardımcı Olabiliriz?</h3>
+        </div>
+        <a href="bayilik.html" target="_blank" class="altYardimciDiviBolme">
+          <img src="resimler/kullaniciIcon.png">
+          <h4>Emlak İşletmesi Açmak İstiyorum</h4>
+          <p>Franchising sistemi ile kendi</br>emlak işletmemi kurmak isteyen</br> girişimciyim</p>
+        </a>
+      
+        <a href="sozlesmeliBayilik.html" target="_blank" class="altYardimciDiviBolme">
+          <img src="resimler/aramaIcon.png">
+          <h4>Sözleşmeli İşletme Açmak İstiyorum</h4>
+          <p>Sözleşmeye dayalı olarak taşınmaz ticaretiyle iştigal etmek isteyen girişimciyim</p>
+        </a>
+      <a href="emlakKursu.html" target="_blank" class="altYardimciDiviBolme">
+        <img src="resimler/mesaj.png">
+        <h4>Emlakçılık Kursu Almak İstiyorum</h4>
+        <p>Taşınmaz Ticareti Hakkında Yönetmelik Kapsamında Emlakçılık Kursu Almak İstiyorum</p>
+      </a>
+      <a href="meslekiYeterlilik.html" target="_blank" class="altYardimciDiviBolme">
+        <img src="resimler/yetkinlik.png">
+        <h4>Mesleki Yeterlilik Belgesi Almak İstiyorum</h4>
+        <p>Sorumlu emlak danışmanı (Seviye 5) ve emlak danışmanı (Seviye 4) ulusal yeterliliklerine dayalı belge almak istiyorum</p>
+      </a>
+    </div>
+
+     
+       
+    <div class="enAltSectiklerimizDivi">
+      <div class="enAltSectiklerimizDiviBaslik">
+        <h3>Sizin İçin Seçtiklerimiz</h3>
+      </div>
+      <div class="slider-container">
+        <div class="slider">
+
+          <div class="fotoSlider">
+            <a href="ilanBir.html" target="_blank" class="fotoslider">
+              <img src="resimler/ilan1.jpg">
+              <h4>Kumkapı'da Otele Uygun 5 Daire 350m2 Komple Satılık İskanlı Bina</h4>
+              <p>Şehsuvar Bey, Fatih, İstanbul</p>
+            </a>
+          </div>
+
+          <div class="fotoSlider">
+            <a href="ilanIki.html" target="_blank" class="fotoslider">
+              <img src="resimler/ilan2.jpg">
+              <h4>Şemsipaşa Mahallesi’nde 2+1 Bodrum Kat Satılık Daire</h4>
+              <p>Şemsi Paşa, Gaziosmanpaşa, İstanbul</p>
+            </a>
+          </div>
+
+          <div class="fotoSlider">
+            <a href="ilanUc.html" target="_blank" class="fotoslider">
+              <img src="resimler/ilan3.jpg">
+              <h4>Denize Yürüme Mesafede, 3+1 Daire, 3 Apart, 9 Oda 2 Katlı 2 Bina</h4>
+              <p>Yenibademli, Gökçeada, Çanakkale</p>
+            </a>
+          </div>
+    
+          
+          <div class="fotoSlider">
+            <a href="ilanDort.html" target="_blank" class="fotoslider">
+              <img src="resimler/ilan4.jpg">
+              <h4>PEKPAK EMLAK'TAN TOKİ 7B Projesinde 3+1 7. KAT Kiralık Daire</h4>
+              <p>Sarıgöl, Gaziosmanpaşa, İstanbul</p>
+            </a>
+          </div>
+
+          <div class="fotoSlider">
+            <a href="ilanBes.html" target="_blank" class="fotoslider">
+              <img src="resimler/ilan5.jpg">
+              <h4>We Haliç Arkasında Haliç Manzaralı 5+1 170m2 Dubleks Daire</h4>
+              <p>Sarıgöl, Gaziosmanpaşa, İstanbul</p>
+            </a>
+          </div>
+
+          <div class="fotoSlider">
+            <a href="ilanAlti.html" target="_blank" class="fotoslider">
+              <img src="resimler/ilan6.jpg">
+              <h4>Gaziosmanpaşa Merkezde Orta Sokakta 4+1 170m2 4 Balkonlu Dubleks</h4>
+              <p>Sarıgöl, Gaziosmanpaşa, İstanbul</p>
+            </a>
+          </div>
+
+          <div class="fotoSlider">
+            <a href="ilanYedi.html" target="_blank" class="fotoslider">
+              <img src="resimler/ilan7.jpg">
+              <h4>BEYLİKDÜZÜ KAVAKLI SAHİL MAHALLESİNDE PALM MARİN SİTESİNE KOMŞU PARSELDE DENİZ MANZARALI 482 M2 ARSA</h4>
+              <p>Sahil, Beylikdüzü, İstanbul</p>
+            </a>
+          </div>
+        </div>  
+      </div>
+    </div>
+    
+    <!-- Bootstrap Javascript CSS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="ofis.js"></script>
+  </body>
+</html>
+
